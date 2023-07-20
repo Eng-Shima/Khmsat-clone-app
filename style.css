@@ -1,0 +1,569 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  height: 1000px;
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+}
+nav {
+  height: 60px;
+  align-items: center;
+  /* border: 2px solid blue; */
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  background-color: #444444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  /* margin-bottom: 100px; */
+}
+
+.me {
+  margin: auto;
+  /* border: 5px solid red; */
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.myPic {
+  /* border: 1px solid red; */
+  width: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.leftMenu .myPic:hover {
+    background-color: #b0aaaabd;
+    cursor: pointer;
+}
+.leftMenu {
+  display: flex;
+}
+.leftIconsMenue {
+  height: 60px;
+}
+.leftIconsMenue .leftBtnIcon a {
+  text-decoration: none;
+  color: white;
+}
+.leftMenu .leftBtnIcon {
+  color: white;
+  background-color: #444444df;
+  border: none;
+  min-height: 60px;
+  padding: 15px;
+  font-size: 18px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.leftMenu .leftBtnIcon:hover {
+  background-color: #b0aaaabd;
+  cursor: pointer;
+}
+
+.leftMenu .leftBtnIcon i {
+  /* border: 2px solid red; */
+  padding: 1px;
+}
+.rightMenu {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.rightMenu i {
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.rightMenu img {
+  margin-left: 10px;
+}
+.rightMenu ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.rightMenu ul li {
+  color: white;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+  /* border: 2px solid blue; */
+}
+.rightMenu ul li i {
+  font-size: 13px;
+  margin-left: 5px;
+}
+.rightMenu .btnBars {
+  padding: 10px;
+  margin-left: 5px;
+  background-color: #444444; 
+  border:none;
+  font-size: 20px;
+  cursor: pointer;
+  height: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.rightMenu button:hover {
+  background-color: #b0aaaabd;
+}
+.rightMenu ul li a button {
+  padding: 18px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #444444df;
+  border: none;
+  height: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.rightMenu ul li a button:hover {
+  background-color: #b0aaaabd;
+  cursor: pointer;
+}
+/* end navbar */
+
+/* Start first section with background img rul('')*/
+/* .firstSec {
+  min-height: 510px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.firstSec div {
+  background-image: url('images/bkground.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-size: 25px;
+  border: 2px solid red;
+}
+.firstSec div h1, 
+.firstSec div h4 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.firstSec div input {
+  font-size: 20px;
+  padding: 18px;
+  min-width: 700px;
+  border: 2px solid rgb(202, 204, 202);
+  outline: none;
+  position: relative;
+}
+.firstSec div input:focus {
+  border: 2px solid rgb(120, 214, 120);
+}
+.firstSec div button {
+  background-color: rgb(97, 190, 97);
+  color: white;
+  padding: 18px;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  position: absolute;
+  bottom: 70px;
+  left: 245px;
+  width: 80px;
+  height: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.firstSec div button:hover {
+  background-color: rgb(7, 160, 7);
+  cursor: pointer;
+} */
+/* End first section  with background img rul('')*/
+
+
+/* start another first section with position */
+.firsttSec {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firsttSec img {
+  height: 700px;
+  width: 100%;
+  margin-top: -100px;
+  position: relative;
+}
+.firsttSec .secContent {
+  position: absolute;
+  top: 200px;
+  font-size: 40px;
+  text-align: center;
+} 
+.firsttSec .secContent h3,
+.firsttSec .secContent h6,
+.firsttSec .secContent input,
+.firsttSec .secContent a {
+  margin-bottom: 20px;
+}
+.firsttSec .secContent input {
+  width: 710px;
+  height: 40px;
+  border: 2px solid rgb(202, 204, 202);
+  font-size: large;
+  padding: 30px;
+  position: relative;
+  outline: none;
+}
+.firsttSec .secContent input:focus {
+  border: 2px solid rgb(120, 214, 120);
+}
+.firsttSec .secContent a button {
+  position: absolute;
+  top: 135px;
+  right: 640px;
+  padding: 8px;
+  width: 60px;
+  font-size: 20px;
+  background-color: rgb(97, 190, 97);
+  color: white;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.firsttSec .secContent a button:hover {
+  background-color: rgb(7, 160, 7);
+  cursor: pointer;
+}
+/* end another first section with position */
+
+/* start second section with position */
+.secondSec h3 {
+  text-align: center;
+  font-size: 37px;
+  margin-bottom: 30px;
+}
+.fatherr {
+  display: flex;
+  height: 170px;
+  margin-bottom: 28px;
+}
+.childd {
+  height: 100%; /* ادي لكل ديف جواه طول 100% من السكشن الكبير اللي بالعرض*/
+  width: 100%;   /* افرد ع الشاشه - خد العرض كله ع الشاشه */
+  /* border: 5px solid blue; */
+  margin: 15px;
+  color: white;
+  display: flex;           /* عشان توسطني الكلمه في نص الديف بالضبط */
+  justify-content: center; /* عشان توسطني الكلمه في نص الديف بالضبط */
+  align-items: center;     /* عشان توسطني الكلمه في نص الديف بالضبط */
+  position: relative;      /* الاب بياخد relative */
+}
+.childd img {
+  position: absolute;      /* الابن بياخد absolute */
+  width: 100%;   /* الصور بتاخد عرض 100% من عرض الديف اللي هي جواه اللي هو الابن اللي اصلا واخد ويدث 100% عشان يتفرد ع الشاشة */
+  height: 100%;   /* وطول الصوره 100% من طول الديف الابن اللي هو اصلا واخد 100% من طول الاب اللي هو 200 بكسل */ 
+  z-index: -1;   /* عشان الصوره تيجي تحت و الكلمه تيجي فوقيها */
+  /* z-index لا تظهر الا مع البوزيشين */
+}
+/* End second section with position */
+
+/*  start second sec with background url (' ')*/
+/* .secondSec h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.father {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.father .child {
+  width: 100%;
+  margin: 10px;
+  height: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
+.father .remote {
+  background-image: url('images/remote.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.father .marketing {
+  background-image: url('images/marketing.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.father .develop {
+  background-image: url('images/development.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.father .translate {
+  background-image: url('images/translate.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.father .audio {
+  background-image: url('images/audio.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.father .design {
+  background-image: url('images/design.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.father .video {
+  background-image: url('images/video.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.father .business {
+  background-image: url('images/bussiness.jpg');
+  background-position: center;
+  background-size: cover;
+} */
+/*  End second sec with background url (' ')*/
+
+/* start 3rd sec */
+.thirdSec {
+  background-color: #f1f1f1;
+  min-height: 700px;
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+.thirdSec .firstrow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.thirdSec .firstrow a button {
+  color: rgb(56, 165, 56);
+  border: 1px solid rgb(56, 165, 56);
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 22px;
+  margin-top: 50px;
+  margin-left: 20px;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.thirdSec .firstrow a button:hover {
+  background-color: rgb(7, 160, 7);
+  color: white;
+  cursor: pointer;
+}
+.thirdSec .firstrow a {
+  text-decoration: none;
+}
+.thirdSec .firstrow a h1 {
+  text-decoration: none;
+  margin-top: 50px;
+  margin-right: 20px;
+  color: black;
+}
+.secondrow {
+  display: flex;
+  justify-content: space-around;
+  /* border: 2px solid blue; */
+}
+.secondrow .second_child {
+  width: 250px;
+  min-height: 190px;
+  /* border: 2px solid red; */
+  overflow: hidden;
+}
+.thirdSec  .secondrow .second_child img {
+  width: 100%;
+  height: 150px;
+}
+.child-content {
+  direction: rtl;
+}
+.thirdSec  .secondrow .second_child h4,
+.thirdSec  .secondrow .second_child h5, 
+.thirdSec  .secondrow .second_child i {
+  margin-bottom: 10px;
+}
+.thirdSec .lasttRow {
+  height: 550px;
+}
+/* End 3rd sec */
+
+/* Start fourthSec */
+.fourthSec {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /* border: 2px solid blue; */
+}
+.fourthSec .khmsatIconss {
+  width: 26%;
+  /* border: 2px solid green;   */
+  margin-right: 40px;
+  direction: rtl;
+  padding: 20px;
+}
+.fourthSec .khmsatIconss  div .fa-square-facebook {
+  font-size: 40px;
+  margin-left: 10px;
+  color: #3b5999;
+}
+.fourthSec .khmsatIconss  div .fa-square-twitter {
+  font-size: 40px;
+  color: #55acef;
+}
+.fourthSec .khmsatIconss  div .fa-cc-paypal, 
+.fourthSec .khmsatIconss  div .fa-cc-mastercard,
+.fourthSec .khmsatIconss  div .fa-cc-visa {
+  font-size: 30px;
+  color: #737373;
+  margin-left: 5px;
+}
+.fourthSec .khmstacontent {
+  display: flex;
+  justify-content: flex-end;
+  width: 66%;
+  /* border: 3px solid red; */
+}
+.fourthSec .khmstacontent div {
+  min-width: 150px;
+  margin-left: 150px;
+  direction: rtl;
+  /* border: 2px solid blue; */
+}
+.fourthSec .khmstacontent .centericDiv {
+  min-width: 350px;
+  margin-right: -110px;
+  margin-left: 170px;
+}
+.fourthSec .khmstacontent .lastDivUl {
+  margin-right: -130px;
+  min-width: 180px;
+}
+.fourthSec .khmstacontent div ul li {
+  font-size: 18px;
+  list-style: none;
+  color: #80b480;
+}
+.fourthSec .khmstacontent div ul a {
+  text-decoration: none;
+}
+/* End fourthSec */
+
+/* start grey Line */
+.greyLine {
+  background-color: #f1f1f1;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.greyLine .LeftGreyLine p {
+  color: #7e7a89;
+  margin-left: 15px;
+}
+.greyLine .RightGreyLine {
+  display: flex;
+  margin-right: 15px;
+}
+.greyLine .RightGreyLine h4 {
+  margin-left: 15px;
+  color: #7e7a89;
+  font-size: 20px;
+}
+/*End grey Line */
+
+/* Start Footer */
+footer {
+  min-height: 180px;
+  /* border: 1px solid blue; */
+}
+footer .footerLogo {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerLogo img {
+  width: 130px;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+footer .footerList .sixRow {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 90px;
+  margin-left: 130px;
+  direction: rtl;
+  flex-direction: row-reverse;
+  /* border: 2px solid green; */
+}
+footer .footerList .sixRow li {
+  list-style: none;
+  /* margin-left: 50px; */
+}
+footer .footerList .sixRow li a {
+  text-decoration: none;
+}
+footer .footerList .sixRow li a h5 {
+  color: #7e7a89;
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+footer .footerList .sixRow li a p {
+  color: #7e7a89;
+  font-size: 13px;
+}
+footer .footerList .threeRow {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 90px;
+  height: 110px;
+  direction: rtl;
+  flex-direction: row-reverse;
+  /* border: 2px solid green; */
+}
+footer .footerList .threeRow li {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 10px;
+  list-style: none;
+}
+footer .footerList .threeRow li a {
+  text-decoration: none;
+}
+footer .footerList .threeRow li a h5 {
+  color: #7e7a89;
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+footer .footerList .threeRow li a p {
+  color: #7e7a89;
+  font-size: 13px;
+}
+/* End Footer */
+
+
+
+
+
